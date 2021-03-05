@@ -11,3 +11,7 @@ Début de l'aventure : **04 mars 2021**
 ## Jour 1
 J'ai découvert comment intégrer un composant React dans une page HTML :
 [lien de démo](https://mendoc.github.io/100-days-of-code/timeline/jour-1)
+
+## Jour 2
+Couleur de pénom. Découvrez la couleur de votre prénom :
+[lien de démo](https://mendoc.github.io/100-days-of-code/timeline/jour-2)
