@@ -1,0 +1,2 @@
+(this["webpackJsonpjour-x"]=this["webpackJsonpjour-x"]||[]).push([[0],{13:function(e,t,n){"use strict";n.r(t);var r=n(0),c=n(3),o=n.n(c),u=n(4),a=n(5),s=n(7),i=n(6),j=n(1),b=function(e){Object(s.a)(n,e);var t=Object(i.a)(n);function n(){return Object(u.a)(this,n),t.apply(this,arguments)}return Object(a.a)(n,[{key:"render",value:function(){return Object(j.jsx)("h1",{children:"JourX"})}}]),n}(r.Component);o.a.render(Object(j.jsx)(b,{}),document.getElementById("root"))}},[[13,1,2]]]);
+//# sourceMappingURL=main.0fec9f39.chunk.js.map
