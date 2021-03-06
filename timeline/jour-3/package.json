@@ -1,0 +1,40 @@
+{
+  "name": "jour-3",
+  "version": "0.1.0",
+  "description": "Un template pour des projets React",
+  "main": "index.js",
+  "homepage": "https://mendoc.github.io/100-days-of-code/jour-3",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "deploy": "react-scripts build && mkdir -p ../prod/jour-3/ && rm -r ../prod/jour-3/* ; mv build/* ../prod/jour-3 && cp ../../index.html ../prod && gh-pages -d ../prod && rm -r build"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Dimitri ONGOUA",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "^4.0.3",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.0.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
