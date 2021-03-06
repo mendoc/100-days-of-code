@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA,KACI,wBACJ,CAEA,MACE,WACF,CAEA,YACE,eACF,CAEA,WACE,YACF","file":"main.b6caaae3.chunk.css","sourcesContent":["body {\n    background-color: #efefef;\n}\n\n.form {\n  width: 500px;\n}\n\ndiv.message {\n  max-width: 500px;\n}\n\n.container{\n  padding:20px\n}"]}
