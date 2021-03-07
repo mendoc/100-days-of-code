@@ -1,13 +1,13 @@
 {
-    "name": "jour-x",
+    "name": "jour-4",
     "version": "0.1.0",
     "description": "Un template pour des projets React",
     "main": "index.js",
-    "homepage": "https://mendoc.github.io/100-days-of-code/jour-x",
+    "homepage": "https://mendoc.github.io/100-days-of-code/jour-4",
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
-        "deploy": "react-scripts build && mkdir -p ../prod/jour-x/ && rm -r ../prod/jour-x/* ; mv build/* ../prod/jour-x && cp ../../index.html ../prod && gh-pages -d ../prod && rm -r build"
+        "deploy": "react-scripts build && mkdir -p ../prod/jour-4/ && rm -r ../prod/jour-4/* ; mv build/* ../prod/jour-4 && cp ../../index.html ../prod && gh-pages -d ../prod && rm -r build"
     },
     "keywords": [
         "react"
