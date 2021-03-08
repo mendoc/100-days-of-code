@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/100-days-of-code/jour-5/static/js/main.0a244339.chunk.js",
+    "main.js.map": "/100-days-of-code/jour-5/static/js/main.0a244339.chunk.js.map",
+    "runtime-main.js": "/100-days-of-code/jour-5/static/js/runtime-main.ec0b3526.js",
+    "runtime-main.js.map": "/100-days-of-code/jour-5/static/js/runtime-main.ec0b3526.js.map",
+    "static/js/2.2f4322b0.chunk.js": "/100-days-of-code/jour-5/static/js/2.2f4322b0.chunk.js",
+    "static/js/2.2f4322b0.chunk.js.map": "/100-days-of-code/jour-5/static/js/2.2f4322b0.chunk.js.map",
+    "index.html": "/100-days-of-code/jour-5/index.html",
+    "static/js/2.2f4322b0.chunk.js.LICENSE.txt": "/100-days-of-code/jour-5/static/js/2.2f4322b0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ec0b3526.js",
+    "static/js/2.2f4322b0.chunk.js",
+    "static/js/main.0a244339.chunk.js"
+  ]
+}
