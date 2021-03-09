@@ -28,7 +28,7 @@ class App extends Component {
 
     handleChange = (e, data) => {
         this.setState({
-            [data.name]: parseInt(data.value)
+            [data.name]: data.value
         })
     }
 
