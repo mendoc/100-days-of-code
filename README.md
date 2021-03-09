@@ -27,3 +27,7 @@ Liste de tâches :
 ## Jour 5
 Joyeux anniversaire :
 [lien de démo](https://mendoc.github.io/100-days-of-code/jour-5)
+
+## Jour 6
+Raccourci de liens :
+[lien de démo](https://mendoc.github.io/100-days-of-code/jour-6)
