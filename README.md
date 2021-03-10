@@ -31,3 +31,7 @@ Joyeux anniversaire :
 ## Jour 6
 Raccourci de liens :
 [lien de démo](https://mendoc.github.io/100-days-of-code/jour-6)
+
+## Jour 7
+Futura News :
+[lien de démo](https://mendoc.github.io/100-days-of-code/jour-7)
