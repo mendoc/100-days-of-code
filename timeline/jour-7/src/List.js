@@ -6,13 +6,13 @@ import Moment from 'react-moment'
 class ListItems extends React.Component {
 
     state = {
-        last: 3,
+        last: 1,
         visibleItems: []
     }
 
     handleBottomVisible = () => {
         this.setState({
-            last: this.state.last + 2
+            last: this.state.last + 1
         })
     }
 
@@ -30,7 +30,10 @@ class ListItems extends React.Component {
                 <Item key={index}>
                     <Item.Image size='small' src={item.image} />
                     <Item.Content>
-                        <Item.Header>{item.title}</Item.Header>
+                        <Visibility onBottomVisible={this.handleBottomVisible}>
+                            <Item.Header>{item.title}</Item.Header>
+                        </Visibility>
+
                         <Item.Meta>
                             <p className='stay'>
                                 <Icon name='clock outline' size='small' /><Moment format="DD/MM/YYYY à HH:mm">{pubDate}</Moment>
@@ -79,16 +82,14 @@ class ListItems extends React.Component {
                             </div>
                         </div>
                     </Item.Content>
-                </Item>
+                </Item >
             )
         })
 
         return (
-            <Visibility onBottomVisible={this.handleBottomVisible} once={false} >
-                <Item.Group divided>
-                    {list}
-                </Item.Group>
-            </Visibility>
+            <Item.Group divided>
+                {list}
+            </Item.Group >
         )
     }
 }
