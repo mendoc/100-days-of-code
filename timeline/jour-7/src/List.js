@@ -6,9 +6,6 @@ import Moment from 'react-moment'
 class ListItems extends React.Component {
 
     state = {
-        calculations: {
-            bottomVisible: false
-        },
         last: 3,
         visibleItems: []
     }
