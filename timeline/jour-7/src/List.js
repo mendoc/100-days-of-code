@@ -1,15 +1,33 @@
 import React from 'react'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
-import { Item, Icon, Button, Popup } from 'semantic-ui-react'
+import { Item, Icon, Button, Popup, Visibility } from 'semantic-ui-react'
 import Moment from 'react-moment'
-
-const paragraph = 'La vie est belle'
 
 class ListItems extends React.Component {
 
+    state = {
+        calculations: {
+            bottomVisible: false
+        },
+        last: 3,
+        visibleItems: []
+    }
+
+    handleBottomVisible = () => {
+        this.setState({
+            last: this.state.last + 2
+        })
+    }
+
     render() {
-        const items = this.props.items
-        const list = items.map((item, index) => {
+        let items = this.props.items
+
+        const visibleItems = items.filter((_, ind) => {
+            return ind <= this.state.last
+        })
+
+        const list = visibleItems.map((item, index) => {
+
             const pubDate = new Date(item.pubDate)
             return (
                 <Item key={index}>
@@ -69,9 +87,11 @@ class ListItems extends React.Component {
         })
 
         return (
-            <Item.Group divided>
-                {list}
-            </Item.Group>
+            <Visibility onBottomVisible={this.handleBottomVisible} once={false} >
+                <Item.Group divided>
+                    {list}
+                </Item.Group>
+            </Visibility>
         )
     }
 }

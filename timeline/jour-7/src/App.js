@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import List from './List'
 import 'semantic-ui-css/semantic.min.css'
 import './App.css'
-import List from './List'
 import { Container, Divider, Header } from 'semantic-ui-react'
 
 class App extends Component {
