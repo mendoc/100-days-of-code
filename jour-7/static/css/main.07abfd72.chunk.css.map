@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAC,KACG,gBAAiB,CACjB,eAAgB,CAChB,aACJ,CACA,YACI,gBACJ","file":"main.07abfd72.chunk.css","sourcesContent":[" body {\n    padding-top: 5rem;\n    max-width: 600px;\n    margin: 0 auto;\n}\n.ui.segment {\n    min-height: 200px;\n}"]}
