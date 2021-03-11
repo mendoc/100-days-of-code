@@ -35,3 +35,7 @@ Raccourci de liens :
 ## Jour 7
 Futura News :
 [lien de démo](https://mendoc.github.io/100-days-of-code/jour-7)
+
+## Jour 5
+Newsletter :
+[lien de démo](https://mendoc.github.io/100-days-of-code/jour-8)
