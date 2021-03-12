@@ -51,7 +51,7 @@ class App extends Component {
         return (
             <Container>
                 <Header as='h2'>Futura News</Header>
-                <p>Dernières actualités du site <a href="https://www.futura-sciences.com/rss/actualites.xml">Futura Sciences</a></p>
+                <p>Dernières actualités du site <a href="https://www.futura-sciences.com">Futura Sciences</a></p>
                 <Divider />
                 <List items={this.state.items} />
             </Container>

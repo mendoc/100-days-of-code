@@ -3,3 +3,6 @@
     max-width: 600px;
     margin: 0 auto;
 }
+.ui.segment {
+    min-height: 200px;
+}

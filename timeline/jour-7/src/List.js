@@ -1,6 +1,6 @@
 import React from 'react'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
-import { Item, Icon, Button, Popup, Visibility } from 'semantic-ui-react'
+import { Item, Icon, Button, Popup, Visibility, Image, Segment, Dimmer, Loader } from 'semantic-ui-react'
 import Moment from 'react-moment'
 
 class ListItems extends React.Component {
@@ -88,7 +88,14 @@ class ListItems extends React.Component {
 
         return (
             <Item.Group divided>
-                {list}
+                {list.length > 0
+                    ? list
+                    : <Segment centered columns={1}>
+                        <Dimmer active inverted>
+                            <Loader inverted>Récupération des articles...</Loader>
+                        </Dimmer>
+                    </Segment>
+                }
             </Item.Group >
         )
     }
