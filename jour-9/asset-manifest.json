@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/100-days-of-code/jour-9/static/css/main.6f4b1810.chunk.css",
+    "main.js": "/100-days-of-code/jour-9/static/js/main.f8daf323.chunk.js",
+    "main.js.map": "/100-days-of-code/jour-9/static/js/main.f8daf323.chunk.js.map",
+    "runtime-main.js": "/100-days-of-code/jour-9/static/js/runtime-main.838a0bc2.js",
+    "runtime-main.js.map": "/100-days-of-code/jour-9/static/js/runtime-main.838a0bc2.js.map",
+    "static/css/2.a991a13c.chunk.css": "/100-days-of-code/jour-9/static/css/2.a991a13c.chunk.css",
+    "static/js/2.fcb97fdd.chunk.js": "/100-days-of-code/jour-9/static/js/2.fcb97fdd.chunk.js",
+    "static/js/2.fcb97fdd.chunk.js.map": "/100-days-of-code/jour-9/static/js/2.fcb97fdd.chunk.js.map",
+    "index.html": "/100-days-of-code/jour-9/index.html",
+    "static/css/2.a991a13c.chunk.css.map": "/100-days-of-code/jour-9/static/css/2.a991a13c.chunk.css.map",
+    "static/css/main.6f4b1810.chunk.css.map": "/100-days-of-code/jour-9/static/css/main.6f4b1810.chunk.css.map",
+    "static/js/2.fcb97fdd.chunk.js.LICENSE.txt": "/100-days-of-code/jour-9/static/js/2.fcb97fdd.chunk.js.LICENSE.txt",
+    "static/media/bootstrap-icons.css": "/100-days-of-code/jour-9/static/media/bootstrap-icons.cc252f2c.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.838a0bc2.js",
+    "static/css/2.a991a13c.chunk.css",
+    "static/js/2.fcb97fdd.chunk.js",
+    "static/css/main.6f4b1810.chunk.css",
+    "static/js/main.f8daf323.chunk.js"
+  ]
+}
