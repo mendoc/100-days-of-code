@@ -12,6 +12,7 @@ class App extends Component {
 
     state = {
         produitsPanier: [],
+        quantite: 0,
         produits: [
             {
                 code: 'P1',
@@ -35,9 +36,37 @@ class App extends Component {
     }
 
     handleAddCart = (produit) => {
-        this.setState({
-            produitsPanier: [...this.state.produitsPanier, produit]
+        let trouve = false
+        let totalProds = 0
+
+        let produitsPanier = this.state.produitsPanier.map(prod => {
+            if (prod.code === produit.code) {
+                trouve = true
+                prod.quantite = prod.quantite + 1
+            }
+            totalProds += prod.quantite
+            return prod
         })
+
+        if (!trouve) {
+            produitsPanier = [...produitsPanier, { ...produit, quantite: 1 }]
+            totalProds++
+        }
+
+        this.setState({
+            produitsPanier: produitsPanier,
+            quantite: totalProds
+        })
+    }
+
+    computeNBCart = () => {
+
+
+        this.state.produitsPanier.map(prod => {
+
+        })
+
+        return totalProds
     }
 
     render() {
@@ -45,7 +74,7 @@ class App extends Component {
             <div className="container-md mt-5 mx-auto">
                 <div className="d-flex justify-content-between align-items-center">
                     <h2 className='h2'>Panier</h2>
-                    <Panier produits={this.state.produitsPanier} />
+                    <Panier quantite={this.state.quantite} />
                 </div>
                 <p>Ajoutez des produits dans le <strong>panier</strong></p>
                 <hr />
