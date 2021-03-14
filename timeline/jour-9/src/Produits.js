@@ -3,7 +3,7 @@ import { Component } from 'react'
 export default class Produits extends Component {
     render() {
         const prods = this.props.produits
-        const liste = prods.map((item, idx) => {
+        const liste = prods.map((item) => {
             return (
                 <div key={item.code} className='produit d-flex mb-3'>
                     <img src={item.image} />

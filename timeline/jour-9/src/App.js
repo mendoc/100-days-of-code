@@ -1,43 +1,26 @@
 import React, { Component } from 'react'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
-import Produits from './Produits'
-import Panier from './Panier'
+import Home from './Home'
+import Commande from './Commande'
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import './App.css'
 
-
 class App extends Component {
 
     state = {
-        produitsPanier: [],
         quantite: 0,
-        produits: [
-            {
-                code: 'P1',
-                nom: 'Cotton T-Shirt',
-                image: 'https://preview.colorlib.com/theme/ashion/img/trend/bs-1.jpg',
-                prix: 12000
-            },
-            {
-                code: 'P2',
-                nom: 'Chain bucket bag',
-                image: 'https://preview.colorlib.com/theme/ashion/img/trend/ht-1.jpg',
-                prix: 6000
-            },
-            {
-                code: 'P3',
-                nom: 'Pendant earrings',
-                image: 'https://preview.colorlib.com/theme/ashion/img/trend/ht-2.jpg',
-                prix: 5000
-            }
-        ]
+        total: 0,
+        produitsPanier: [],
     }
 
-    handleAddCart = (produit) => {
+    handleUpdateCart = (produit) => {
+
         let trouve = false
         let totalProds = 0
+        let total = 0
 
         let produitsPanier = this.state.produitsPanier.map(prod => {
             if (prod.code === produit.code) {
@@ -45,41 +28,54 @@ class App extends Component {
                 prod.quantite = prod.quantite + 1
             }
             totalProds += prod.quantite
+            total += prod.prix * prod.quantite
             return prod
         })
 
         if (!trouve) {
             produitsPanier = [...produitsPanier, { ...produit, quantite: 1 }]
             totalProds++
+            total += produit.prix
         }
 
         this.setState({
-            produitsPanier: produitsPanier,
-            quantite: totalProds
+            quantite: totalProds,
+            total: total,
+            produitsPanier: produitsPanier
         })
     }
 
-    computeNBCart = () => {
+    handleRemoveProduct = (produit) => {
+        let totalProds = 0
+        let total = 0
 
-
-        this.state.produitsPanier.map(prod => {
-
+        const produitsPanier = this.state.produitsPanier.filter(prod => {
+            if (prod.code !== produit.code) {
+                totalProds += prod.quantite
+                total += prod.prix * prod.quantite
+            }
+            return prod.code !== produit.code
         })
 
-        return totalProds
+        this.setState({
+            quantite: totalProds,
+            total: total,
+            produitsPanier: produitsPanier
+        })
     }
 
     render() {
         return (
-            <div className="container-md mt-5 mx-auto">
-                <div className="d-flex justify-content-between align-items-center">
-                    <h2 className='h2'>Panier</h2>
-                    <Panier quantite={this.state.quantite} />
-                </div>
-                <p>Ajoutez des produits dans le <strong>panier</strong></p>
-                <hr />
-                <Produits produits={this.state.produits} onAddToCart={this.handleAddCart} />
-            </div>
+            <Router>
+                <Switch>
+                    <Route exact path='/'>
+                        <Home updateCart={this.handleUpdateCart} quantite={this.state.quantite} />
+                    </Route>
+                    <Route path='/panier'>
+                        <Commande total={this.state.total} produits={this.state.produitsPanier} removeProduct={this.handleRemoveProduct} />
+                    </Route>
+                </Switch>
+            </Router>
         )
     }
 }
