@@ -43,3 +43,7 @@ Newsletter :
 ## Jour 9
 Panier :
 [lien de démo](https://mendoc.github.io/100-days-of-code/jour-9)
+
+## Jour 15 et 16
+Posts public :
+[lien de démo](https://mendoc.github.io/100-days-of-code/jour-15)
