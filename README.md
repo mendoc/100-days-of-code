@@ -47,3 +47,7 @@ Panier :
 ## Jour 15 et 16
 Posts public :
 [lien de démo](https://mendoc.github.io/100-days-of-code/jour-15)
+
+## Jour 17
+Amélioration de Posts public :
+[lien de démo](https://mendoc.github.io/100-days-of-code/jour-15)

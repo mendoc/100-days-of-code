@@ -5,3 +5,7 @@ body {
     margin: 0 auto;
     font-family: 'Work Sans', sans-serif;
 }
+.card-columns.delete .card {
+    cursor: pointer;
+    border-color: red;
+}

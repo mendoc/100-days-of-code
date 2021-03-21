@@ -12,8 +12,15 @@ export default function PostForm({ onPost }) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        
+
         if (content === "" || content.length > 300) return;
+
+        if (content.includes("!")) {
+            onPost(content);
+            setContent("");
+            return;
+        }
+
         setProcessing(true);
 
         addPost(content, (res) => {

@@ -1,5 +1,5 @@
 
-const url = 'https://cross-origin.herokuapp.com/https://post-public.netlify.app/.netlify/functions/post';
+const url = 'https://post-public.netlify.app/.netlify/functions/post';
 
 const getPosts = (callback) => {
     fetch(url).then(res => {
@@ -17,10 +17,23 @@ const addPost = (content, callback) => {
     fetch(url,
         {
             method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
             body: JSON.stringify({ content: content })
+        }
+    ).then(res => res.json())
+        .then(res => {
+            console.log(res);
+            callback(res);
+        }).catch(err => {
+            callback(false);
+            console.log(err);
+        });
+}
+
+const deletePost = (id, callback) => {
+    fetch(url,
+        {
+            method: 'POST',
+            body: JSON.stringify({ id: id, mode: "delete" })
         }
     ).then(res => res.json())
         .then(res => {
@@ -34,5 +47,5 @@ const addPost = (content, callback) => {
 
 
 exports.getPosts = getPosts;
-
 exports.addPost = addPost;
+exports.deletePost = deletePost;
