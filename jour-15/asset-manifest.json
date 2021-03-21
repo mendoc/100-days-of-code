@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/100-days-of-code/jour-15/static/css/main.bac7588f.chunk.css",
-    "main.js": "/100-days-of-code/jour-15/static/js/main.7551cccd.chunk.js",
-    "main.js.map": "/100-days-of-code/jour-15/static/js/main.7551cccd.chunk.js.map",
+    "main.css": "/100-days-of-code/jour-15/static/css/main.19b6ea11.chunk.css",
+    "main.js": "/100-days-of-code/jour-15/static/js/main.6dc4be93.chunk.js",
+    "main.js.map": "/100-days-of-code/jour-15/static/js/main.6dc4be93.chunk.js.map",
     "runtime-main.js": "/100-days-of-code/jour-15/static/js/runtime-main.36077646.js",
     "runtime-main.js.map": "/100-days-of-code/jour-15/static/js/runtime-main.36077646.js.map",
     "static/css/2.fabbef47.chunk.css": "/100-days-of-code/jour-15/static/css/2.fabbef47.chunk.css",
@@ -10,14 +10,14 @@
     "static/js/2.5c50ed15.chunk.js.map": "/100-days-of-code/jour-15/static/js/2.5c50ed15.chunk.js.map",
     "index.html": "/100-days-of-code/jour-15/index.html",
     "static/css/2.fabbef47.chunk.css.map": "/100-days-of-code/jour-15/static/css/2.fabbef47.chunk.css.map",
-    "static/css/main.bac7588f.chunk.css.map": "/100-days-of-code/jour-15/static/css/main.bac7588f.chunk.css.map",
+    "static/css/main.19b6ea11.chunk.css.map": "/100-days-of-code/jour-15/static/css/main.19b6ea11.chunk.css.map",
     "static/js/2.5c50ed15.chunk.js.LICENSE.txt": "/100-days-of-code/jour-15/static/js/2.5c50ed15.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.36077646.js",
     "static/css/2.fabbef47.chunk.css",
     "static/js/2.5c50ed15.chunk.js",
-    "static/css/main.bac7588f.chunk.css",
-    "static/js/main.7551cccd.chunk.js"
+    "static/css/main.19b6ea11.chunk.css",
+    "static/js/main.6dc4be93.chunk.js"
   ]
 }
